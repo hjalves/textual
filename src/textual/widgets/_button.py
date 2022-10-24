@@ -281,7 +281,7 @@ class Button(Static, can_focus=True):
         Returns:
             Button: A Button widget of the 'success' variant.
         """
-        return Button(
+        return cls(
             label=label,
             disabled=disabled,
             variant="success",
@@ -312,7 +312,7 @@ class Button(Static, can_focus=True):
         Returns:
             Button: A Button widget of the 'warning' variant.
         """
-        return Button(
+        return cls(
             label=label,
             disabled=disabled,
             variant="warning",
@@ -343,7 +343,7 @@ class Button(Static, can_focus=True):
         Returns:
             Button: A Button widget of the 'error' variant.
         """
-        return Button(
+        return cls(
             label=label,
             disabled=disabled,
             variant="error",
